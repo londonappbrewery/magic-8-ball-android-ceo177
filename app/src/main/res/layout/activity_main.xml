@@ -12,19 +12,8 @@
     android:paddingTop="16dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/askButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/image_eightBall"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp"
-        android:background="#3F51B5"
-        android:text="Ask"
-        android:textColor="@android:color/white" />
-
     <ImageView
-        android:id="@+id/image_eightBall"
+        android:id="@+id/img_eightBall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignWithParentIfMissing="false"
@@ -33,7 +22,7 @@
         android:layout_centerInParent="false"
         android:layout_marginTop="17dp"
         android:adjustViewBounds="false"
-        app:srcCompat="@drawable/ball1" android:contentDescription="TODO"/>
+        app:srcCompat="@drawable/ball1" />
 
     <TextView
         android:id="@+id/textView"
@@ -41,10 +30,24 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:text="Make everyday decisions easier!"
+        android:text="@string/txt_title"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/askButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/img_eightBall"
+        android:layout_alignRight="@+id/img_eightBall"
+        android:layout_below="@+id/img_eightBall"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:layout_marginTop="44dp"
+        android:background="#3F51B5"
+        android:text="@string/btn_ask"
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>
